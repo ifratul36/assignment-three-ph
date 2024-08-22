@@ -21,6 +21,7 @@
             clifford: '#da373d',
             primary_btn:'#ABEF5F',
             Text:'#212121',
+
           }
         }
       }
@@ -30,6 +31,7 @@
     .manrope-google-font{
         font-family: "Manrope", sans-serif;
     }
+   
   </style>
 </head>
 <body>
@@ -52,9 +54,9 @@
             <div class="py-2 lg:w-3/12 lg:flex lg:justify-between lg:items-center hidden">
                 <span class="mr-1 rounded-full  bg-white px-2 py-1 "><i class="fa-solid fa-magnifying-glass"></i></span>
                 <span class="mr-1 rounded-full bg-white px-2 py-1 "><i class="fa-solid fa-cart-shopping"></i></span>
-                <button class="bg-primary_btn px-4 py-2 rounded-3xl" >Book Consult  <span class="bg-black rounded-full px-2 py-1 text-white"><i class="fa-solid fa-arrow-right -rotate-45"></i></span></button>
+                <button class="bg-primary_btn px-4 py-2 rounded-full" >Book Consult  <span class="bg-black rounded-full px-2 py-1 text-white"><i class="fa-solid fa-arrow-right -rotate-45"></i></span></button>
             </div>
-            <div class="font-medium text-lg lg:hidden"><i class="fa-solid fa-bars"></i></div>
+            <div class="font-medium text-lg lg:hidden bg-white rounded-full px-3 py-2"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <div class="w-11/12 mx-auto">
             <div class="">
@@ -76,10 +78,10 @@
       <main class="lg:w-11/12 lg:mx-auto">
           <!-- design thoughtful site -->
            <section class="bg-slate-100 rounded-xl">
-            <div class="hidden lg:block p-3"><img src="./assets/Vector.png" alt=""></div>
-               <div class=" lg:flex lg:items-center lg:gap-10 mx-auto lg:pl-10 text-center ">
-                     <div class=" lg:w-5/12 mx-auto">
-                      <button class="bg-white rounded-3xl px-4 py-1 "><span><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
+            <div class="hidden lg:block p-3 lg:text-left"><img src="./assets/Vector.png" alt=""></div>
+               <div class=" lg:flex lg:items-center lg:gap-10 lg:pl-10 text-center  lg:text-left">
+                     <div class=" lg:w-5/12">
+                      <button class="bg-white rounded-full px-4 py-1 mt-2"><span><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
                       <br>
                       <br>
                       <h1 class="font-extrabold text-2xl lg:text7xl">We design thoughtful, <br class="hidden lg:block">liveable spaces</h1>
@@ -117,7 +119,7 @@
               <!-- work process --> 
                <div>
                 <div class=" text-center">
-                  <button class="bg-white rounded-3xl px-4 py-1 mt-2"><span><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
+                  <button class="bg-white rounded-full px-4 py-1 mt-2"><span><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
                   <br>
                   <br>
                   <h1 class="font-bold text-3xl lg:text-4xl">Our Works Process</h1>
@@ -174,21 +176,36 @@
                
            
                <!-- form section -->
-                <section>
+                <section class="">
                   <div class="text-center mt-14">
-                    <button class="bg-[#dafeb1] px-4 py-2 rounded-2xl"><span class="mr-2"><i class="fa-solid fa-arrow-right"></i></span>Let’s Connect</button>
+                    <button class="bg-[#dafeb1] px-4 py-2 rounded-full"><span class="mr-2"><i class="fa-solid fa-arrow-right"></i></span>Let’s Connect</button>
                     <br>
                     <br>
                     <h1 class="font-bold text-3xl lg:text-4xl">Let’s Discuss Next Project</h1>
                     <br>
                     <p class="lg:w-7/12 mx-auto font-medium ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                    </div>
-                   <div class="bg-red-500 mb-7 text-black lg:grid lg:grid-cols-2 gap-3 border border-black w-11/12 mx-auto">
-                      <input class="bg-white w-9/12 mt-4 py-3 px-6 rounded-2xl" type="text" placeholder="First Name*">
-                      <input class="bg-white w-9/12 mt-4 py-3 px-6 rounded-2xl" type="text" placeholder="Last Name*">
-                      <input class="bg-white w-9/12 py-3 px-6 rounded-2xl" type="text" placeholder="Phone Number*">
-                      <input class="bg-white w-9/12 py-3 px-6 rounded-2xl" type="text" placeholder="Email Number*">
-                      <textarea class="bg-white  w-9/12 py-3 px-6 rounded-2xl" name="" id="" cols="5" rows="3" placeholder="Write your message here"></textarea>
+                   <div class="bg-red-500 mb-7 text-black">
+                    <div class=" lg:grid lg:grid-cols-2 gap-3 border border-black w-11/12 mx-auto">
+                      <input
+                        type="text"
+                        placeholder="First Name*"
+                        class="input input-bordered input-md w-full rounded-full" />
+                        <input
+                        type="text"
+                        placeholder="Last Name*"
+                        class="input input-bordered input-md w-full rounded-full" />
+                        <input
+                        type="text"
+                        placeholder="Phone Number*"
+                        class="input input-bordered input-md w-full rounded-full " />
+                        <input
+                        type="text"
+                        placeholder="Email Number*"
+                        class="input input-bordered input-md w-full  rounded-full" />
+                     </div>
+                     <textarea class="  w-11/12 py-3 px-30
+                         rounded-2xl" name="" id="" cols="5" rows="3" placeholder="Write your message here"></textarea>
                    </div>
                 </section>
       </main>
